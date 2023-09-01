@@ -24,6 +24,32 @@
             z-index: 9;
             width: 200px;
             margin-bottom: 20px;
+            &:hover{
+                // border: solid 2px red;
+                animation: wobble-hor-bottom 0.8s both;
+                @keyframes wobble-hor-bottom {
+                    0%,
+                    100% {
+                      transform: translateX(0%);
+                      transform-origin: 50% 50%;
+                    }
+                    15% {
+                      transform: translateX(-30px) rotate(-6deg);
+                    }
+                    30% {
+                      transform: translateX(15px) rotate(6deg);
+                    }
+                    45% {
+                      transform: translateX(-15px) rotate(-3.6deg);
+                    }
+                    60% {
+                      transform: translateX(9px) rotate(2.4deg);
+                    }
+                    75% {
+                      transform: translateX(-6px) rotate(-1.2deg);
+                    }
+                  }
+            }
             @include md {
                 width: 500px;
                 margin-right: 60px;
@@ -55,8 +81,15 @@
                 font-size: 80px;
                 font-weight: 700;
                 line-height: 1;
-                color: rgba(0, 0, 0, 0.845);
+                color: rgb(0, 0, 0);
                 margin-bottom: 20px;
+                background-image : url("../../../assets/text-bg.jpg");                
+                background-size : cover;
+                background-position : center;
+                background-clip : text;
+                -webkit-background-clip : text;
+                color: transparent;
+                  
                 @include md {
                     font-size: 180px;
                 }
@@ -72,6 +105,10 @@
                     line-height: 24px;
                     margin-bottom: 40px;
                 }
+            }
+            .slow {
+                color: red;
+                font-style: italic;
             }
             .ctas {
                 display: flex;

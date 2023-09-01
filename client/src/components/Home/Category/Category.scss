@@ -17,11 +17,23 @@
             @include md {
                 width: calc(25% - 10px);
             }
-            img {
-                width: 100%;
-                display: block;
-                transition: all ease 0.3s;
-            }
+            // &.skeleton{
+            //     border: solid 2px black;
+            //     animation: skeleton-loading 1s linear infinite alternate;
+            //     @keyframes skeleton-loading {
+            //         0% {
+            //           background-color: hsl(200, 20%, 80%);
+            //         }
+            //         100% {
+            //           background-color: hsl(200, 20%, 95%);
+            //         }
+            //       }
+            //     }
+                img {
+                    width: 100%;
+                    display: block;
+                    transition: all ease 0.3s;
+                }
             &:hover {
                 img {
                     transform: scale(1.2);

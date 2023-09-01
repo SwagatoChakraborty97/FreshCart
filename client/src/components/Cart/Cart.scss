@@ -71,8 +71,6 @@
         font-size: 120px;
         opacity: 0.1;
       }
-      // span {
-      // }
       .return-cta {
         outline: 0;
         border: 0;
@@ -83,10 +81,10 @@
         justify-content: center;
         cursor: pointer;
         font-size: 13px;
-        font-weight: 400;
+        font-weight: 500;
         color: rgb(0, 0, 0);
-        background: #dbd21d;
-        border-bottom: 3px solid #a8aa16;
+        background: #FFD700;
+        border-radius: 2px;
         svg {
           margin-right: 10px;
         }

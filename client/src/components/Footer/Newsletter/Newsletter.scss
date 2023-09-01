@@ -63,9 +63,28 @@
                 justify-content: center;
                 cursor: pointer;
                 font-size: 16px;
-                color: white;
+                color: rgb(255, 255, 255);
                 background: rgba(226, 222, 5, 0.719);
                 border-bottom: 3px solidy rgba(234, 190, 14, 0.839);
+                animation: color-change-5x 5s ease-out infinite alternate ;
+                @keyframes color-change-5x {
+                    0% {
+                      background: #19dcea;
+                    }
+                    25% {
+                      background: #b22cff;
+                    }
+                    50% {
+                      background: #ea2222;
+                    }
+                    75% {
+                      background: #f5be10;
+                    }
+                    100% {
+                      background: #3bd80d;
+                    }
+                  }
+                  
                 @include md {
                     width: 120px;
                 }
