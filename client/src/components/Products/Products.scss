@@ -32,6 +32,18 @@
         @include md {
             gap: 20px;
         }
+        &.skeleton{
+            // border: solid 2px red;
+            animation: skeleton-loading 0.6s linear infinite alternate;
+            @keyframes skeleton-loading {
+                0% {
+                  background-color: hsl(200, 20%, 80%);
+                }
+                100% {
+                  background-color: hsl(200, 20%, 95%);
+                }
+            }
+        }
     }
 }
 

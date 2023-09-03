@@ -14,26 +14,26 @@
             width: calc(50% - 5px);
             cursor: pointer;
             overflow: hidden;
-            @include md {
-                width: calc(25% - 10px);
-            }
-            // &.skeleton{
-            //     border: solid 2px black;
-            //     animation: skeleton-loading 1s linear infinite alternate;
-            //     @keyframes skeleton-loading {
-            //         0% {
-            //           background-color: hsl(200, 20%, 80%);
-            //         }
-            //         100% {
-            //           background-color: hsl(200, 20%, 95%);
-            //         }
-            //       }
-            //     }
+            &.skeleton{
+                // border: solid 2px black;
+                animation: skeleton-loading 0.6s linear infinite alternate;
+                @keyframes skeleton-loading {
+                    0% {
+                      background-color: hsl(200, 20%, 80%);
+                    }
+                    100% {
+                        background-color: hsl(200, 20%, 95%);
+                    }
+                  }
+                }
                 img {
                     width: 100%;
                     display: block;
                     transition: all ease 0.3s;
                 }
+            @include md {
+                width: calc(25% - 10px);
+            }
             &:hover {
                 img {
                     transform: scale(1.2);
